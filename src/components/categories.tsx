@@ -89,15 +89,26 @@ const CategoryCard: React.FC<{ cat: typeof categories[0] }> = ({ cat }) => {
         background: '#fff',
       }}
     >
-      {/* Image area */}
+      
       <div style={{
         height: '150px',
-        display: 'flex', alignItems: 'center', justifyContent: 'center',
-        position: 'relative', overflow: 'hidden',
-        transition: 'transform 0.4s ease',
-        transform: hovered ? 'scale(1.04)' : 'scale(1)',
+        display: 'flex', 
+        alignItems: 'center', 
+        justifyContent: 'center',
+        position: 'relative', 
+        overflow: 'hidden', // Keeps the zoom inside the box
       }}>
-        <img src={cat.img} alt={cat.name} style={{ width:'100%', objectFit:'cover' }} />
+        <img 
+          src={cat.img} 
+          alt={cat.name} 
+          style={{ 
+            width: '100%', 
+            height: '100%', 
+            objectFit: 'cover',
+            transition: 'transform 0.4s ease',
+            transform: hovered ? 'scale(1.1)' : 'scale(1)', // The image zooms, the box stays still
+          }} 
+        />
       </div>
 
       {/* Label */}
