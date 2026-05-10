@@ -130,7 +130,7 @@ const Footer: React.FC = () => {
                 {col.title}
               </h4>
               {col.links.map(link => (
-                <a key={link} href="#" style={{
+                <a key={link} href="/" style={{
                   display: 'block', fontSize: '0.78rem', fontWeight: 300,
                   color: 'rgba(255,255,255,0.45)', marginBottom: '11px',
                   transition: 'color 0.2s', textDecoration: 'none',
@@ -160,7 +160,7 @@ const Footer: React.FC = () => {
             </div>
             <div style={{ display: 'flex', gap: '16px' }}>
               {['Twitter', 'Instagram', 'Facebook', 'WhatsApp'].map(s => (
-                <a key={s} href="#" style={{
+                <a key={s} href="/" style={{
                   fontSize: '0.7rem', fontWeight: 400,
                   color: 'rgba(255,255,255,0.25)',
                   transition: 'color 0.2s', textDecoration: 'none',

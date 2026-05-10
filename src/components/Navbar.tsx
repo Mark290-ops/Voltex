@@ -46,7 +46,7 @@ const Navbar: React.FC<Props> = ({ totalItems, onCartClick, onAccountClick }) =>
         <div style={{ padding: '0 56px', display: 'flex', alignItems: 'center', gap: '20px', height: '64px' }}>
 
           {/* Logo */}
-          <a href="#" style={{ display: 'flex', alignItems: 'center', gap: '7px', flexShrink: 0, textDecoration: 'none' }}>
+          <a href="/" style={{ display: 'flex', alignItems: 'center', gap: '7px', flexShrink: 0, textDecoration: 'none' }}>
             <div style={{ width: 0, height: 0, borderLeft: '7px solid transparent', borderRight: '7px solid transparent', borderBottom: '13px solid var(--blue)' }} />
             <span style={{ color: '#fff', fontSize: '1.35rem', fontWeight: 800, letterSpacing: '-0.04em' }}>
               Volt<span style={{ color: 'var(--blue)' }}>ex</span>

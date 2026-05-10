@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 
 export interface Address {
   id: string;
@@ -28,7 +28,6 @@ export interface User {
   orders: Order[];
 }
 
-const STORAGE_KEY = 'voltex_user';
 const SESSION_KEY = 'voltex_session';
 
 // Simulated user database stored in localStorage
